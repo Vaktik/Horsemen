@@ -1,0 +1,83 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="HorsemenEnterprises.Master"   %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <a href="https://www.flaticon.com/free-icons/repair" title="repair icons">Repair icons created by Freepik - Flaticon</a>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="css/Style.css" rel="stylesheet" />
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/master.css">
+<!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <!-- header section starts  -->
+
+             <header class="header">
+                <nav class="navbar navbar-style">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menuicon">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <div class="">
+                                <img src="images/Untitled%20design%20(1).png" class="logo-img" />
+                            </div>
+                        </div>
+                        <div class="collapse navbar-collapse" id="menuicon">
+                            <ul class="nav navbar-nav navbar-right">
+                                <asp:Button class="button type4" ID="home" runat="server" Text="Home"  OnClick="home_Click"/>
+                                
+                                <asp:Button class="button type4" ID="create" runat="server" Text="Create an Account" OnClick="create_Click" />
+                                <asp:Button class="button type4" ID="login" runat="server" Text="Login" OnClick="login_Click" />
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </nav> 
+                </header>
+
+            <!-- header section ends -->
+
+        
+
+           
+            <!-- footer section  -->
+            <footer>
+                <a href="homepage.aspx" class="fas fa-angle-up" id="scroll-top"></a>
+                <div class="share">
+                    <a href="#" class="btn">Facebook</a>
+                    <a href="#" class="btn">Twitter</a>
+                    <a href="#" class="btn">Instagram</a>
+                    <a href="#" class="btn">linkedin</a>
+                    <a href="" target="_blank" class="btn">Youtube</a>
+                    <a href="#" class="btn">linkedin</a>
+                </div>
+                <!-- scroll top button  -->
+                <h1 class="credit">&copy; <span>HORSEMEN ENTERPRISE 2023</span> | ALL RIGHTS RESERVED</h1>
+            </footer>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

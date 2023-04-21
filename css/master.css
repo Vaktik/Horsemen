@@ -1,0 +1,143 @@
+﻿
+* {
+    font-family: 'Times New Roman';
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+body {
+    background: white;
+}
+
+.heading {
+    text-align: center;
+    font-size: 3.5rem;
+    padding: 1rem !important;
+    color: #666;
+}
+
+    .heading span {
+        color: var(--red);
+    }
+
+.btn {
+    display: inline-block;
+    padding: .8rem 3rem;
+    border: .2rem solid var(--red);
+    color: var(--red);
+    cursor: pointer;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    margin-top: 1rem;
+}
+
+    .btn::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 0%;
+        height: 100%;
+        background: var(--red);
+        transition: .3s linear;
+        z-index: -1;
+    }
+
+    .btn:hover::before {
+        width: 100%;
+        left: 0;
+    }
+
+    .btn:hover {
+        color: #fff;
+        border-radius: 12px;
+    }
+
+header {
+    position: fixed !important;
+    height: 85px;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    z-index: 1000 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    background: #fff;
+    padding: 0.5rem 5% !important;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1) !important;
+}
+
+
+
+    header .navbar a {
+        font-size: 1.5rem !important;
+        margin-left: 4rem !important;
+        color: #666;
+    }
+
+
+#menu-bar {
+    font-size: 3rem;
+    cursor: pointer;
+    color: #666;
+    border: .1rem solid #666;
+    border-radius: .3rem;
+    padding: .5rem 1.5rem;
+    display: none;
+}
+
+
+.cont-img {
+    height: 70px;
+    width: 70px;
+    margin-top: 70px;
+}
+
+.logo-img {
+    height: 65px;
+    width: 65px;
+}
+
+.footer {
+    text-align: center;
+    background: #fff;
+    padding: 0.5rem 5%;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    height: 100px;
+    width: 100%;
+    font-size: 15px;
+}
+
+.share, .credit {
+    font-size: 10px;
+}
+
+.log-btn {
+    border: none;
+    padding: 8px 15px 8px 15px;
+    color: #fff;
+    box-shadow: 1px 1px 4px #DADADA;
+    -moz-box-shadow: 1px 1px 4px #DADADA;
+    -webkit-box-shadow: 1px 1px 4px #DADADA;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+}
